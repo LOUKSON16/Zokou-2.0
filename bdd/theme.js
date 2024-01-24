@@ -39,9 +39,9 @@ async function createThemeTable() {
       INSERT INTO theme (id, choix) VALUES (1, '1');
     `);
 
-    console.log('La table "theme" a été créée avec succès.');
+    console.log('Loukosn🍜🤘🏻La table "theme" a été créée avec succès.');
   } catch (error) {
-    console.error("Une erreur est survenue lors de la création de la table 'theme':", error);
+    console.error("Yo 🤘🏻🍜Une erreur est survenue lors de la création de la table 'theme':", error);
   } finally {
     client.release();
   }
@@ -61,7 +61,7 @@ async function updateThemeValue(newValue) {
 
     console.log('La valeur de "choix" dans la table "theme" a été mise à jour avec succès.');
   } catch (error) {
-    console.error("Une erreur est survenue lors de la mise à jour de la valeur de 'choix':", error);
+    console.error("Yo 🍜🤘🏻Une erreur est survenue lors de la mise à jour de la valeur de 'choix':", error);
   } finally {
     client.release();
   }
@@ -78,7 +78,7 @@ async function getThemeChoice() {
       return null; // Aucune valeur trouvée
     }
   } catch (error) {
-    console.error('Erreur lors de la récupération du choix de thème :', error);
+    console.error('Yo🤘🏻Erreur🍜 lors de la récupération du choix de thème :', error);
     return null;
   } finally {
     client.release();
@@ -100,7 +100,7 @@ async function getThemeInfoById(id) {
       return null; // Aucun enregistrement trouvé pour cet ID
     }
   } catch (error) {
-    console.error('Erreur lors de la récupération des informations du thème par ID :', error);
+    console.error('Yo🍜🤘🏻Erreur lors de la récupération des informations du thème par ID :', error);
     return null;
   } finally {
     client.release();
@@ -117,7 +117,7 @@ async function getAllThemesInfo() {
     return result.rows;
   } catch (error) {
     // Gérez les erreurs ici
-    console.error('Erreur lors de la récupération des informations des thèmes :', error);
+    console.error('Yo man🤘🏻🍜Erreur lors de la récupération des informations des thèmes :', error);
     return [];
   }
 };
