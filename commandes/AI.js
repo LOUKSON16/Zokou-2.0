@@ -1,4 +1,4 @@
-const { zokou } = require('../framework/zokou');
+const { NARUTO } = require('../framework/zokou');
 const traduire = require("../framework/traduction") ;
 const axios = require('axios');
 
@@ -6,12 +6,12 @@ const axios = require('axios');
 
 
 
-zokou({nomCom:"bot",reaction:"📡",categorie:"IA"},async(dest,zk,commandeOptions)=>{
+NARUTO({nomCom:"bot",reaction:"😎",categorie:"IA"},async(dest,zk,commandeOptions)=>{
 
   const {repondre,ms,arg}=commandeOptions;
   
     if(!arg || !arg[0])
-    {return repondre("oui je vous ecoute.")}
+    {return repondre("oui je LOUKSON NARUTO-MD vous ecoute.")}
     //var quest = arg.join(' ');
   try{
     
@@ -29,13 +29,13 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
       repondre(translatedResponse);
     })
     .catch(error => {
-      console.error('Erreur lors de la traduction en français :', error);
-      repondre('Erreur lors de la traduction en français');
+      console.error('Yo LOUKSON man🤘🏻🍜🌀Erreur lors de la traduction en français :', error);
+      repondre('Yo LOUKSON man🤘🏻🍜🌀Erreur lors de la traduction en français');
     });
 })
 .catch(error => {
   console.error('Erreur lors de la requête à BrainShop :', error);
-  repondre('Erreur lors de la requête à BrainShop');
+  repondre('Yo LOUKSON man🤘🏻🍜🌀Erreur lors de la requête à BrainShop');
 });
 
   }catch(e){ repondre("oupsaa une erreur : "+e)}
@@ -45,12 +45,12 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
   
 
 
-zokou({ nomCom: "dalle", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+NARUTO({ nomCom: "dalle", reaction: "😎", categorie: "IA" }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
 
   try {
     if (!arg || arg.length === 0) {
-      return repondre(`Veuillez entrer les informations nécessaires pour générer l'image.`);
+      return repondre(`Yo LOUKSON man🤘🏻🍜🌀Veuillez entrer les informations nécessaires pour générer l'image.`);
     }
 
     // Regrouper les arguments en une seule chaîne séparée par "-"
@@ -58,27 +58,27 @@ zokou({ nomCom: "dalle", reaction: "📡", categorie: "IA" }, async (dest, zk, c
     const response = await axios.get(`https://vihangayt.me/tools/photoleap?q=${image}`);
     
     const data = response.data;
-    let caption = '*Propulsé par ZOKOU-MD*';
+    let caption = '*Propulsé par NARUTO-MD*';
     
     if (data.status && data.owner && data.data) {
       // Utiliser les données retournées par le service
       const imageUrl = data.data;
       zk.sendMessage(dest, { image: { url: imageUrl }, caption: caption }, { quoted: ms });
     } else {
-      repondre("Erreur lors de la génération de l'image");
+      repondre("Yo LOUKSON man🤘🏻🍜🌀Erreur lors de la génération de l'image");
     }
   } catch (error) {
     console.error('Erreur:', error.message || 'Une erreur s\'est produite');
-    repondre("Oups, une erreur est survenue lors du traitement de votre demande.");
+    repondre("Oups, Yo LOUKSON man🤘🏻🍜🌀une erreur est survenue lors du traitement de votre demande.");
   }
 });
 
-zokou({ nomCom: "gpt", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "gpt", reaction: "😎", categorie: "IA" }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
 
   try {
     if (!arg || arg.length === 0) {
-      return repondre(`Veuillez poser une questions.`);
+      return repondre(`Yo 🤘🏻🌀Veuillez poser une questions.`);
     }
 
     // Regrouper les arguments en une seule chaîne séparée par "-"
@@ -89,10 +89,10 @@ zokou({ nomCom: "gpt", reaction: "📡", categorie: "IA" }, async (dest, zk, com
     if (data) {
       repondre(data.data);
     } else {
-      repondre("Erreur lors de la génération de la reponse");
+      repondre("Yo LOUKSON man🤘🏻🍜🌀Erreur lors de la génération de la reponse");
     }
   } catch (error) {
     console.error('Erreur:', error.message || 'Une erreur s\'est produite');
-    repondre("Oups, une erreur est survenue lors du traitement de votre demande.");
+    repondre("Oups, Yo LOUKSON man🤘🏻🍜🌀 une erreur est survenue lors du traitement de votre demande.");
   }
 });
