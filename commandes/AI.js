@@ -1,4 +1,4 @@
-const { NARUTO } = require('../framework/zokou');
+const { NARUTO } = require('../framework/NARUTO');
 const traduire = require("../framework/traduction") ;
 const axios = require('axios');
 
