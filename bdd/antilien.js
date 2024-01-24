@@ -25,9 +25,9 @@ async function createAntilienTable() {
         action text
       );
     `);
-    console.log("La table 'antilien' a été créée avec succès.");
+    console.log("Yo man 🍜🤘🏻La table 'antilien' a été créée avec succès.");
   } catch (error) {
-    console.error("Une erreur est survenue lors de la création de la table 'antilien':", error);
+    console.error("Yo Yo Une erreur est survenue lors de la création de la table 'antilien' bro:", error);
   } finally {
     client.release();
   }
@@ -54,9 +54,9 @@ async function ajouterOuMettreAJourJid(jid, etat) {
       await client.query('INSERT INTO antilien (jid, etat, action) VALUES ($1, $2, $3)', [jid, etat, 'supp']);
     }
     
-    console.log(`JID ${jid} ajouté ou mis à jour avec succès dans la table 'antilien'.`);
+    console.log(`JID ${jid} Yo man 🤘🏻🍜🌀ajouté ou mis à jour avec succès dans la table 'antilien'.`);
   } catch (error) {
-    console.error('Erreur lors de l\'ajout ou de la mise à jour du JID dans la table ,', error);
+    console.error('🌀🌀Erreur lors de l\'ajout ou de la mise à jour du JID dans la table ,', error);
   } finally {
     client.release();
   }
@@ -104,7 +104,7 @@ async function verifierEtatJid(jid) {
       return false;
     }
   } catch (error) {
-    console.error('Erreur lors de la vérification de l\'état du JID dans la table ', error);
+    console.error('Yo 🌀🍜Erreur lors de la vérification de l\'état du JID dans la table ', error);
     return false;
   } finally {
     client.release();
