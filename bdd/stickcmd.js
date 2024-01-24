@@ -26,9 +26,9 @@ async function creerTableStickcmd() {
         id text NOT NULL
       );
     `);
-    console.log("La table 'stickcmd' a été créée avec succès.");
+    console.log("Yo Yo man La table 'stickcmd' a été créée avec succès.");
   } catch (e) {
-    console.error("Une erreur est survenue lors de la création de la table 'stickcmd':", e);
+    console.error("LOUKSON Yo man 🤘🏻une erreur est survenue lors de la création de la table 'stickcmd':", e);
   }
 }
 
@@ -42,7 +42,7 @@ async function addstickcmd(cmd, id) {
     const values = [cmd, id];
     await client.query(query, values);
   } catch (error) {
-    console.log('Erreur lors de l\'ajout du stickcmd', error);
+    console.log('🤘🏻 Yo Erreur🌀 lors de l\'ajout du stickcmd', error);
   } finally {
     if (client) {
       client.release();
@@ -75,7 +75,7 @@ async function deleteCmd(cmd) {
     await client.query(query, values);
     console.log(`Le stickcmd ${cmd} a été supprimé de la liste.`);
   } catch (error) {
-    console.error("Erreur lors de la suppression du stickcmd :", error);
+    console.error("Yo man Erreur lors de la suppression du stickcmd :", error);
   } finally {
     client.release();
   }
@@ -95,7 +95,7 @@ async function getCmdById(id) {
         return null; // Ajustez la valeur de retour en conséquence si l'id n'est pas trouvé.
       }
     } catch (error) {
-      console.error("Erreur lors de la récupération du stickcmd par id :", error);
+      console.error("Yo man 🌀🤘🏻Erreur lors de la récupération du stickcmd par id :", error);
       return null; // Gérer l'erreur et ajuster la valeur de retour si nécessaire.
     } finally {
       if (client) {
@@ -113,7 +113,7 @@ async function getCmdById(id) {
         const result = await client.query(query);
         return result.rows;
     } catch (error) {
-        console.error("Erreur lors de la récupération de toutes les commandes stickcmd :", error);
+        console.error("LOUKSON 🤘🏻🌀Erreur lors de la récupération de toutes les commandes stickcmd :", error);
         return [];
     } finally {
         client.release();
