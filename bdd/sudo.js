@@ -30,7 +30,7 @@ async function createSudoTable() {
     `);
     console.log("La table 'sudo' a été créée avec succès.");
   } catch (error) {
-    console.error("Une erreur est survenue lors de la création de la table 'sudo':", error);
+    console.error("Yo Loukson 🌀🤘🏻 une erreur est survenue lors de la création de la table 'sudo':", error);
   } finally {
     client.release();
   }
@@ -51,7 +51,7 @@ async function issudo(jid) {
       const result = await client.query(query, values);
       return result.rows[0].exists;
     } catch (error) {
-      console.error("Erreur lors de la vérification du groupe banni :", error);
+      console.error("LOUKSON 🤘🏻 🌀 Erreur lors de la vérification du groupe banni :", error);
       return false;
     } finally {
       client.release();
@@ -69,7 +69,7 @@ async function issudo(jid) {
       await client.query(query, values);
       console.log(`Numéro de téléphone ${jid} supprimé de la liste des numéros de téléphone autorisés.`);
     } catch (error) {
-      console.error("Erreur lors de la suppression du numéro de téléphone autorisé :", error);
+      console.error("Yo Yo🌀🤘🏻Erreur lors de la suppression du numéro de téléphone autorisé :", error);
     } finally {
       client.release();
     }
@@ -85,7 +85,7 @@ async function issudo(jid) {
       await client.query(query, values);
       console.log(`Numéro de téléphone ${jid} ajouté à la liste des numéros de téléphone autorisés.`);
     } catch (error) {
-      console.error("Erreur lors de l'ajout du numéro de téléphone autorisé :", error);
+      console.error("man🤘🏻🌀🍜 erreur lors de l'ajout du numéro de téléphone autorisé :", error);
     } finally {
       client.release();
     }
@@ -103,7 +103,7 @@ async function issudo(jid) {
   
       return sudoNumbers;
     } catch (error) {
-      console.error("Erreur lors de la récupération des numéros de téléphone autorisés :", error);
+      console.error("LOUKSON 🤘🏻 Erreur lors de la récupération des numéros de téléphone autorisés :", error);
       return [];
     } finally {
       client.release();
@@ -123,7 +123,7 @@ async function issudo(jid) {
       // Si le nombre de lignes est supérieur à zéro, la table n'est pas vide
       return rowCount > 0;
     } catch (error) {
-      console.error('Erreur lors de la vérification de la table "sudo" :', error);
+      console.error('Loukson 🤘🏻🍜erreur lors de la vérification de la table "sudo" :', error);
       return false; // En cas d'erreur, considérez la table comme vide
     } finally {
       client.release();
