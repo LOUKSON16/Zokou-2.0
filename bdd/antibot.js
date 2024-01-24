@@ -25,9 +25,9 @@ async function createAntibotTable() {
         action text
       );
     `);
-    console.log("La table 'antibot' a été créée avec succès.");
+    console.log("YO 🤘🏻🍜la table 'antibot' a été créée avec succès.");
   } catch (error) {
-    console.error("Une erreur est survenue lors de la création de la table 'antibot':", error);
+    console.error("YO Une erreur est survenue lors de la création de la table 'antibot':", error);
   } finally {
     client.release();
   }
@@ -54,9 +54,9 @@ async function atbajouterOuMettreAJourJid(jid, etat) {
       await client.query('INSERT INTO antibot (jid, etat, action) VALUES ($1, $2, $3)', [jid, etat, 'supp']);
     }
     
-    console.log(`JID ${jid} ajouté ou mis à jour avec succès dans la table 'antibot'.`);
+    console.log(`JID ${jid} YO man 🤘🏻🍜 ajouté ou mis à jour avec succès dans la table 'antibot'.`);
   } catch (error) {
-    console.error('Erreur lors de l\'ajout ou de la mise à jour du JID dans la table ,', error);
+    console.error('YO 🍜🤘🏻Erreur lors de l\'ajout ou de la mise à jour du JID dans la table ,', error);
   } finally {
     client.release();
   }
@@ -79,9 +79,9 @@ async function atbmettreAJourAction(jid, action) {
       await client.query('INSERT INTO antibot (jid, etat, action) VALUES ($1, $2, $3)', [jid, 'non', action]);
     }
     
-    console.log(`Action mise à jour avec succès pour le JID ${jid} dans la table 'antibot'.`);
+    console.log(`YO man 🤘🏻 Action mise à jour avec succès pour le JID ${jid} dans la table 'antibot'.`);
   } catch (error) {
-    console.error('Erreur lors de la mise à jour de l\'action pour le JID dans la table  :', error);
+    console.error('YO man🍜🤘🏻 Erreur lors de la mise à jour de l\'action pour le JID dans la table  :', error);
   } finally {
     client.release();
   }
@@ -104,7 +104,7 @@ async function atbverifierEtatJid(jid) {
       return false;
     }
   } catch (error) {
-    console.error('Erreur lors de la vérification de l\'état du JID dans la table ', error);
+    console.error('YO mane 🤘🏻🍜 Erreur lors de la vérification de l\'état du JID dans la table ', error);
     return false;
   } finally {
     client.release();
@@ -126,7 +126,7 @@ async function atbrecupererActionJid(jid) {
       return 'supp';
     }
   } catch (error) {
-    console.error('Erreur lors de la récupération de l\'action du JID dans la table :', error);
+    console.error('🍜YO man Erreur lors de la récupération de l\'action du JID dans la table :', error);
     return 'supp'; // Gestion de l'erreur en retournant une valeur par défaut
   } finally {
     client.release();
