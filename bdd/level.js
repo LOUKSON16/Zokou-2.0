@@ -33,7 +33,7 @@ async function createUsersRankTable() {
       );
     `);
   } catch (error) {
-    console.error('Erreur lors de la création de la table users_rank:', error);
+    console.error('Yo man LOUKSON 🌀 Erreur lors de la création de la table users_rank:', error);
   } finally {
     client.release();
   }
@@ -56,7 +56,7 @@ async function ajouterOuMettreAJourUserData(jid) {
     }
 
   } catch (error) {
-    console.error('Erreur lors de la mise à jour des données de l\'utilisateur:', error);
+    console.error('Yo Yo LOUKSON🌀🌀Erreur lors de la mise à jour des données de l\'utilisateur:', error);
   } finally {
     client.release();
   }
@@ -97,7 +97,7 @@ async function getBottom10Users() {
     // Retournez le tableau des utilisateurs
     return result.rows;
   } catch (error) {
-    console.error('Erreur lors de la récupération du bottom 10 des utilisateurs:', error);
+    console.error('Yo Yo LOUKSON 🤘🏻🌀Erreur lors de la récupération du bottom 10 des utilisateurs:', error);
     return []; // En cas d'erreur, renvoyez un tableau vide
   } finally {
     client.release();
