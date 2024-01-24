@@ -26,9 +26,9 @@ const creerTableOnlyAdmin = async () => {
         groupeJid text PRIMARY KEY
       );
     `);
-    console.log("La table 'onlyAdmin' a été créée avec succès.");
+    console.log("Yo man La table 'onlyAdmin' a été créée avec succès.");
   } catch (e) {
-    console.error("Une erreur est survenue lors de la création de la table 'onlyAdmin':", e);
+    console.error("Loukson le génie du🌀🤘🏻 mal une erreur est survenue lors de la création de la table 'onlyAdmin':", e);
   }
 };
 
@@ -46,7 +46,7 @@ async function addGroupToOnlyAdminList(groupeJid) {
     await client.query(query, values);
     console.log(`Groupe JID ${groupeJid} ajouté à la liste des groupes onlyAdmin.`);
   } catch (error) {
-    console.error("Erreur lors de l'ajout du groupe onlyAdmin :", error);
+    console.error("Yo Yo LOUKSON 🤘🏻 🌀 Erreur lors de l'ajout du groupe onlyAdmin :", error);
   } finally {
     client.release();
   }
@@ -63,7 +63,7 @@ async function isGroupOnlyAdmin(groupeJid) {
     const result = await client.query(query, values);
     return result.rows[0].exists;
   } catch (error) {
-    console.error("Erreur lors de la vérification du groupe onlyAdmin :", error);
+    console.error("Yo Yo 🌀🤘🏻Erreur lors de la vérification du groupe onlyAdmin :", error);
     return false;
   } finally {
     client.release();
@@ -81,7 +81,7 @@ async function removeGroupFromOnlyAdminList(groupeJid) {
     await client.query(query, values);
     console.log(`Groupe JID ${groupeJid} supprimé de la liste des groupes onlyAdmin.`);
   } catch (error) {
-    console.error("Erreur lors de la suppression du groupe onlyAdmin :", error);
+    console.error("Yo boss loukson🤘🏻Erreur lors de la suppression du groupe onlyAdmin :", error);
   } finally {
     client.release();
   }
