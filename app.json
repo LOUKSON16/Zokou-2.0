@@ -2,8 +2,8 @@
   "name":"Zokou-2.0",
   "description":"bot whatsapp développé par djalega++",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://raw.githubusercontent.com/djalega8000/Zokou-2.0/main/Zokou.jpg",
-  "repository":"https://github.com/djalega8000/Zokou-2.0",
+  "logo":"https://telegra.ph/file/ea78c4f31dcf90054a1e1.jpg",
+  "repository":"https://github.com/LOUKSON16/Zokou-2.0",
   "succes_url":"/",
   "stack":"container",
   "env":{
