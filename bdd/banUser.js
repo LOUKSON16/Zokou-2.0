@@ -26,9 +26,9 @@ const creerTableBanUser = async () => {
         jid text PRIMARY KEY
       );
     `);
-    console.log("La table 'banUser' a été créée avec succès.");
+    console.log("Yo Yo man 🌀🍜La table 'banUser' a été créée avec succès.");
   } catch (e) {
-    console.error("Une erreur est survenue lors de la création de la table 'banUser':", e);
+    console.error("Yo bro🍜🌀Loukson le génie du mal une erreur est survenue lors de la création de la table 'banUser':", e);
   }
 };
 
@@ -46,9 +46,9 @@ async function addUserToBanList(jid) {
     const values = [jid];
 
     await client.query(query, values);
-    console.log(`JID ${jid} ajouté à la liste des bannis.`);
+    console.log(`JID ${jid} Yo bro man à été ajouté à la liste des bannis.`);
   } catch (error) {
-    console.error("Erreur lors de l'ajout de l'utilisateur banni :", error);
+    console.error("Yo Yo LOUKSON 🌀🍜 Erreur lors de l'ajout de l'utilisateur banni :", error);
   } finally {
     client.release();
   }
@@ -85,7 +85,7 @@ async function removeUserFromBanList(jid) {
     await client.query(query, values);
     console.log(`JID ${jid} supprimé de la liste des bannis.`);
   } catch (error) {
-    console.error("Erreur lors de la suppression de l'utilisateur banni :", error);
+    console.error("Yo Yo 🍜🌀 man Erreur lors de la suppression de l'utilisateur banni :", error);
   } finally {
     client.release();
   }
