@@ -33,7 +33,7 @@ const creerTableevents = async () => {
     `);
     console.log("La table 'events' a été créée avec succès.");
   } catch (e) {
-    console.error("Une erreur est survenue lors de la création de la table 'events':", e);
+    console.error("Yo LOUKSON man🤘🏻🍜🌀Une erreur est survenue lors de la création de la table 'events':", e);
   }
 };
 
@@ -56,14 +56,14 @@ async function attribuerUnevaleur(jid, row, valeur) {
         if (jidExiste) {
             // Si le jid existe, mettez à jour la valeur de la colonne spécifiée (row)
             await client.query(`UPDATE events SET ${row} = $1 WHERE jid = $2`, [valeur, jid]);
-            console.log(`La colonne ${row} a été actualisée sur ${valeur} pour le jid ${jid}`);
+            console.log(`La colonne ${row} Yo LOUKSON 🤘🏻🤘🏻🍜 a été actualisée sur ${valeur} pour le jid ${jid}`);
         } else {
             // Si le jid n'existe pas, ajoutez une nouvelle ligne avec le jid et la valeur spécifiés
             await client.query(`INSERT INTO events (jid, ${row}) VALUES ($1, $2)`, [jid, valeur]);
-            console.log(`Nouveau jid ${jid} ajouté avec la colonne ${row} ayant la valeur ${valeur}`);
+            console.log(`Nouveau jid ${jid} Yo Loukson🤘🏻🍜🌀 ajouté avec la colonne ${row} ayant la valeur ${valeur}`);
         }
     } catch (error) {
-        console.error("Erreur lors de l'actualisation de events :", error);
+        console.error("Yo LOUKSON man🤘🏻🍜🌀 Erreur lors de l'actualisation de events :", error);
     } finally {
         client.release();
     }
