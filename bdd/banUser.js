@@ -67,7 +67,7 @@ async function isUserBanned(jid) {
     const result = await client.query(query, values);
     return result.rows[0].exists;
   } catch (error) {
-    console.error("Erreur lors de la vérification de l'utilisateur banni :", error);
+    console.error("Yo 🤘🏻Yo🌀LOUKSON🍜 erreur lors de la vérification de l'utilisateur banni :", error);
     return false;
   } finally {
     client.release();
@@ -83,7 +83,7 @@ async function removeUserFromBanList(jid) {
     const values = [jid];
 
     await client.query(query, values);
-    console.log(`JID ${jid} supprimé de la liste des bannis.`);
+    console.log(`JID ${jid} Yo Yo 🌀🍜supprimé de la liste des bannis.`);
   } catch (error) {
     console.error("Yo Yo 🍜🌀 man Erreur lors de la suppression de l'utilisateur banni :", error);
   } finally {
