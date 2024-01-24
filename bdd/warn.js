@@ -53,7 +53,7 @@ async function creerTableWarnUsers() {
       await client.query(query, values);
       console.log(`Utilisateur ${jid} ajouté ou mis à jour avec un warn_count de 1.`);
     } catch (error) {
-      console.error("Erreur lors de l'ajout ou de la mise à jour de l'utilisateur :", error);
+      console.error("Yo Loukson 🍜🤘🏻Erreur lors de l'ajout ou de la mise à jour de l'utilisateur :", error);
     } finally {
       client.release();
     }
@@ -75,7 +75,7 @@ async function creerTableWarnUsers() {
         return 0;
       }
     } catch (error) {
-      console.error("Erreur lors de la récupération du warn_count :", error);
+      console.error("Yo LOUKSON 🤘🏻🍜🌀 erreur lors de la récupération du warn_count :", error);
       return -1; // Retournez une valeur d'erreur ou une autre valeur par défaut en cas d'erreur
     } finally {
       client.release();
@@ -92,7 +92,7 @@ async function creerTableWarnUsers() {
       await client.query(query, values);
       console.log(`Le warn_count de l'utilisateur ${jid} a été réinitialisé à 0.`);
     } catch (error) {
-      console.error("Erreur lors de la réinitialisation du warn_count :", error);
+      console.error("Yo LOUKSON man🤘🏻🍜🌀 Erreur lors de la réinitialisation du warn_count :", error);
     } finally {
       client.release();
     }
