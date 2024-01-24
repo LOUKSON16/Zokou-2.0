@@ -51,7 +51,7 @@ NARUTO({ nomCom: "proprio", categorie: "Général", reaction: "🍜" }, async (d
   }
 });
 
-NARUTO({ nomCom: "dev", categorie: "Général", reaction: "💞" }, async (dest, zk, commandeOptions) => {
+NARUTO({ nomCom: "dev", categorie: "Général", reaction: "🤘🏻" }, async (dest, zk, commandeOptions) => {
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
