@@ -39,6 +39,10 @@
       "required":false
        
      },
+      "THEME": {
+      "description": "Mettez le nom du thème NARUTO-MD..",
+      "value": "NARUTO-MD"
+     },
 
      "PM_PERMIT" :
      {
