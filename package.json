@@ -1,18 +1,18 @@
 {
-  "name": "NARUTO-MD-2.0",
+  "name": "NARUTO-2.0",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node index.js",
-    "NARUTO-MD": "pm2 start index.js --attach --max-memory-restart 490M",
+    "NARUTO": "pm2 start index.js --attach --max-memory-restart 490M",
     "c": "tsc"
   },
   "keywords": [
     "bot",
     "Baileys",
-    "Zokou",
+    "NARUTO",
     "whatsapp",
     "whatsapp-bot",
     "Loukson"
