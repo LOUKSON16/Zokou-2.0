@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { zokou } = require("../framework/zokou");
-zokou({ nomCom: "test", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+const { NARUTO } = require("../framework/zokou");
+NARUTO({ nomCom: "test", reaction: "🤘🏻", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
     let z = 'Salut je m\'appelle *Zokou* \n\n ' + 'je suis un bot Whatsapp Multi-appareil ';
     let d = ' developpé par *Djalega++*';
