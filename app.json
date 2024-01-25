@@ -39,11 +39,7 @@
       "required":false
        
      },
-      "THEME": {
-      "description": "Mettez le nom du thème NARUTO-MD..",
-      "value": "NARUTO-MD"
-     },
-
+      
      "PM_PERMIT" :
      {
       "description":"Les commandes seront pas fonctionnelles en priver pour les autres utilisateurs (oui pour activer et non pour désactiver)",
